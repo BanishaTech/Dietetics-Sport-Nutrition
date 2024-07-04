@@ -1,0 +1,233 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+    display: flex;
+    width: 50px;
+    /* Ajustar según el tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+
+}
+
+.container {
+    margin: 0;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    /* justify-content: space-between; */
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.search {
+    width: 50%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    border: 2px solid orange;
+    border-radius: 25px;
+    padding: 10px;
+    height: 20px;
+}
+
+.title-bar {
+    font-size: 50px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.searchlist {
+    border: none;
+    padding: 15px 30px;
+    text-align: left;
+    height: 10px;
+    width: 100%;
+    margin-right: 15px;
+
+
+}
+
+.searchlist:focus {
+    outline: none;
+}
+
+.routing {
+    margin: 25px 0 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.routing span {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.routing a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 16.6666%;
+    padding: 20px 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.routing a:hover {
+    background-color: orange;
+    color: white;
+}
+
+footer img {
+    width: 50px;
+    margin-right: 20px;
+    border: solid 4px red;
+}
+
+.form-icon {
+    display: flex;
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 10px auto 80px;
+    align-self: center;
+}
+
+.button-icon {
+    transition: background-color 0.3s ;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 1.5px orange;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#signup:hover{
+    background-color: orange;
+    color: white;
+}
+
+#register:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+.button-icon span {
+    pointer-events: none; 
+
+}
+
+
+.button-icon:active {
+    background-color: orange;
+}
+
+.icon-search {
+    z-index: 1001 ;
+}
+
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  
+  footer img {
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  #soundIcon {
+    cursor: pointer;
+    font-size: 24px;
+}
+#soundIcon.active {
+    color: green;
+}
+#soundIcon.inactive {
+    color: red;
+}
+#soundspan{
+    color: orange;
+}
+
+#soundspan:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+.container-3 {
+    width: 100%;
+    height: 100%;
+}
+
+.picture{
+    width: 100%;
+    height: 100%;
+}
+
+.first-pic{
+    max-width: 60%;
+    height: 50%;
+}
+
+.big-picture{
+    width: 100%;
+    height: 100%;
+}
+
+.second-pic{
+    width: 100%;
+    height: 100%;
+}
+
+.small-picture{
+    width: 100%;
+    height: 100%;
+}
+
+.third.pic{
+    width: 100%;
+    height: 100%;
+
+}
