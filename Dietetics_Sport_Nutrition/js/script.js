@@ -1,47 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const soundSpan = document.getElementById('soundSpan');
-    const soundIcon = document.getElementById('soundIcon');
-    
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const sounds = ['sounds/perro.mp3', 'sounds/gato.mp3', 'sounds/pajaro.mp3'];
-    const buffers = [];
-    let isAudioEnabled = false;
 
-    // Load all sounds into buffers
-    sounds.forEach((sound, index) => {
-        fetch(sound)
-            .then(response => response.arrayBuffer())
-            .then(data => audioContext.decodeAudioData(data))
-            .then(buffer => {
-                buffers[index] = buffer;
-            })
-            .catch(err => console.error('Error loading sound:', err));
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceLinks = document.querySelectorAll('.service-link');
+  
+      serviceLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          const serviceId = this.getAttribute('href').substring(1);
+          const serviceDetails = document.querySelectorAll('.service-info');
+  
+          serviceDetails.forEach(info => {
+            info.classList.remove('active');
+          });
+  
+          const selectedService = document.getElementById(serviceId);
+          selectedService.classList.add('active');
+        });
+      });
     });
-
-    function playSound(buffer) {
-        const source = audioContext.createBufferSource();
-        source.buffer = buffer;
-        source.connect(audioContext.destination);
-        source.start(0);
-    }
-
-    soundIcon.addEventListener('click', () => {
-        if (audioContext.state === 'suspended') {
-            audioContext.resume();
-        }
-        isAudioEnabled = !isAudioEnabled;
-        soundIcon.textContent = isAudioEnabled ? '🔊' : '🔇';
-        soundIcon.className = isAudioEnabled ? 'active' : 'inactive';
-    });
-
-    soundSpan.addEventListener('mouseenter', () => {
-        if (isAudioEnabled && buffers.length > 0) {
-            const randomIndex = Math.floor(Math.random() * buffers.length);
-            const randomBuffer = buffers[randomIndex];
-            if (randomBuffer) {
-                playSound(randomBuffer);
-            }
-        }
-    });
-});
-

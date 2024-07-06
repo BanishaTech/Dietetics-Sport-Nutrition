@@ -8,7 +8,6 @@ body {
 .icon {
     display: flex;
     width: 50px;
-    /* Ajustar según el tamaño del logo */
     height: auto;
     margin-right: 10px;
 
@@ -24,7 +23,6 @@ body {
     top: 0px;
     z-index: 1000;
     background-color: white;
-    /* justify-content: space-between; */
 }
 
 .container h1 {
@@ -38,7 +36,6 @@ body {
     text-align: left;
     flex-direction: column;
     align-self: center;
-
 }
 
 .search {
@@ -46,14 +43,14 @@ body {
     margin-left: 25px;
     display: flex;
     align-items: center;
-    border: 2px solid orange;
+    border: 2px solid rgb(242, 85, 112);
     border-radius: 25px;
     padding: 10px;
     height: 20px;
 }
 
 .title-bar {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 450;
     text-align: center;
 }
@@ -65,8 +62,6 @@ body {
     height: 10px;
     width: 100%;
     margin-right: 15px;
-
-
 }
 
 .searchlist:focus {
@@ -78,11 +73,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .routing span {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .routing a {
@@ -92,22 +90,39 @@ body {
     display: flex;
     justify-content: space-between;
     width: 16.6666%;
-    padding: 20px 16px;
+    padding: 80px ;
     border: 1px solid black;
     border-radius: 10px;
     transition: 0.4s;
 }
 
 .routing a:hover {
-    background-color: orange;
+    background-color: rgb(242, 85, 112);
     color: white;
 }
 
-footer img {
+.routing .row {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.routing .row a {
+    text-decoration: none;
+    text-align: center;
+    padding: 120px;
+    border: 1px solid #ccc;
+  }
+
+
+
+/* footer img {
     width: 50px;
     margin-right: 20px;
     border: solid 4px red;
-}
+    background-color: rgb(242, 85, 112);
+} */
 
 .form-icon {
     display: flex;
@@ -129,7 +144,7 @@ footer img {
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
-    border: solid 1.5px orange;
+    border: solid 1.5px rgb(242, 85, 112);
     border-radius: 20px;
     margin: 0px 10px 0px 10px;
     width: 100px;
@@ -137,12 +152,12 @@ footer img {
 }
 
 #signup:hover{
-    background-color: orange;
+    background-color: rgb(242, 85, 112);
     color: white;
 }
 
 #register:hover{
-    background-color: orange;
+    background-color: rgb(242, 85, 112);
     color: white;
 }
 
@@ -154,14 +169,14 @@ footer img {
 
 
 .button-icon:active {
-    background-color: orange;
+    background-color: rgb(242, 85, 112);
 }
 
 .icon-search {
     z-index: 1001 ;
 }
 
-
+/* 
 footer {
     text-align: center;
     display: flex;
@@ -174,27 +189,7 @@ footer {
   footer img {
     width: 50px;
     margin-right: 20px;
-  }
-
-  #soundIcon {
-    cursor: pointer;
-    font-size: 24px;
-}
-#soundIcon.active {
-    color: green;
-}
-#soundIcon.inactive {
-    color: red;
-}
-#soundspan{
-    color: orange;
-}
-
-#soundspan:hover{
-    background-color: orange;
-    color: white;
-}
-
+  } */
 
 .container-3 {
     width: 100%;
@@ -207,17 +202,17 @@ footer {
 }
 
 .first-pic{
-    max-width: 60%;
+    max-width: 25%;
     height: 50%;
 }
 
 .big-picture{
-    width: 100%;
+    max-width: 25%;
     height: 100%;
 }
 
 .second-pic{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -226,8 +221,68 @@ footer {
     height: 100%;
 }
 
-.third.pic{
-    width: 100%;
+.third-pic{
+    max-width: 60%;
     height: 100%;
 
 }
+
+.fourth-pic{
+    max-width: 60%;
+    height: 100%;
+}
+
+.fifth-pic{
+    max-width: 20;
+    height: 50%;
+}
+
+.fresh-fruits{
+    width: 100%;
+    height: 100%;
+}
+
+
+.fitness-center{
+    width: 100%;
+    height: 100%;
+}
+
+
+.service{
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(242, 85, 112);
+}
+
+.text-color{
+    font-size: 100%;
+}
+
+
+.service-details {
+    margin-top: 20px;
+  }
+  
+  .service-info {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .service-info.active {
+    display: block;
+  }
+  
+  .service-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .service-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
