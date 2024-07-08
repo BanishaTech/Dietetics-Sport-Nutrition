@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 16.6666%;
-    padding: 80px ;
+    padding: 80px;
     border: 1px solid black;
     border-radius: 10px;
     transition: 0.4s;
@@ -102,18 +102,18 @@ body {
 }
 
 .routing .row {
-    width: 100%; 
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 .routing .row a {
     text-decoration: none;
     text-align: center;
     padding: 120px;
     border: 1px solid #ccc;
-  }
+}
 
 
 
@@ -138,7 +138,7 @@ body {
 }
 
 .button-icon {
-    transition: background-color 0.3s ;
+    transition: background-color 0.3s;
     border-radius: 4px;
     color: black;
     text-decoration: none;
@@ -151,19 +151,19 @@ body {
     text-align: center;
 }
 
-#signup:hover{
+#signup:hover {
     background-color: rgb(242, 85, 112);
     color: white;
 }
 
-#register:hover{
+#register:hover {
     background-color: rgb(242, 85, 112);
     color: white;
 }
 
 
 .button-icon span {
-    pointer-events: none; 
+    pointer-events: none;
 
 }
 
@@ -173,7 +173,7 @@ body {
 }
 
 .icon-search {
-    z-index: 1001 ;
+    z-index: 1001;
 }
 
 /* 
@@ -196,93 +196,85 @@ footer {
     height: 100%;
 }
 
-.picture{
+.picture {
     width: 100%;
     height: 100%;
 }
 
-.first-pic{
+.first-pic {
     max-width: 25%;
     height: 50%;
 }
 
-.big-picture{
+.big-picture {
     max-width: 25%;
     height: 100%;
 }
 
-.second-pic{
+.second-pic {
     max-width: 100%;
     height: 100%;
 }
 
-.small-picture{
+.small-picture {
     width: 100%;
     height: 100%;
 }
 
-.third-pic{
+.third-pic {
     max-width: 60%;
     height: 100%;
 
 }
 
-.fourth-pic{
+.fourth-pic {
     max-width: 60%;
     height: 100%;
 }
 
-.fifth-pic{
+.fifth-pic {
     max-width: 20;
     height: 50%;
 }
 
-.fresh-fruits{
+.fresh-fruits {
     width: 100%;
     height: 100%;
 }
 
 
-.fitness-center{
+.fitness-center {
     width: 100%;
     height: 100%;
 }
 
 
-.service{
+.service {
     text-align: center;
     font-size: 60px;
     background-color: rgb(242, 85, 112);
 }
 
-.text-color{
+.text-color {
     font-size: 100%;
 }
 
 
 .service-details {
     margin-top: 20px;
-  }
-  
-  .service-info {
-    display: none;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .service-info.active {
-    display: block;
-  }
-  
-  .service-info h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .service-info p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+}
 
+.icon-img {
+   width: 70px;
+   height: auto;
+
+}
+
+footer{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 85, 112);
+    font-size: 50%;
+}
