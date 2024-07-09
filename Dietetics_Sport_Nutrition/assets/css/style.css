@@ -3,6 +3,7 @@
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 .icon {
@@ -23,6 +24,8 @@ body {
     top: 0px;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0px 0px 10px 0px #888888;
+    margin: 0px;
 }
 
 .container h1 {
@@ -49,11 +52,6 @@ body {
     height: 20px;
 }
 
-.title-bar {
-    font-size: 60px;
-    font-weight: 450;
-    text-align: center;
-}
 
 .searchlist {
     border: none;
@@ -72,29 +70,31 @@ body {
     margin: 25px 0 15px 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+
 }
 
-.routing span {
-    font-weight: 500;
-    font-size: 30px;
+
+
+.links{
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(242, 85, 112);
+    border-radius: 8px;
+    margin: 10px;
+    height: 40px;
+    align-content: center;
+    font-weight: 500px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.routing a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 16.6666%;
-    padding: 80px;
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: 0.4s;
-}
 
 .routing a:hover {
     background-color: rgb(242, 85, 112);
@@ -102,20 +102,12 @@ body {
 }
 
 .routing .row {
-    width: 100%;
+    width: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
 }
-
-.routing .row a {
-    text-decoration: none;
-    text-align: center;
-    padding: 120px;
-    border: 1px solid #ccc;
-}
-
-
 
 /* footer img {
     width: 50px;
@@ -149,6 +141,7 @@ body {
     margin: 0px 10px 0px 10px;
     width: 100px;
     text-align: center;
+    display: none;
 }
 
 #signup:hover {
@@ -165,6 +158,7 @@ body {
 .button-icon span {
     pointer-events: none;
 
+
 }
 
 
@@ -176,87 +170,19 @@ body {
     z-index: 1001;
 }
 
-/* 
-footer {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    font-size: 20px;
-  }
-  
-  footer img {
-    width: 50px;
-    margin-right: 20px;
-  } */
-
 .container-3 {
     width: 100%;
     height: 100%;
 }
 
-.picture {
-    width: 100%;
-    height: 100%;
-}
-
-.first-pic {
-    max-width: 25%;
-    height: 50%;
-}
-
-.big-picture {
-    max-width: 25%;
-    height: 100%;
-}
-
-.second-pic {
-    max-width: 100%;
-    height: 100%;
-}
-
-.small-picture {
-    width: 100%;
-    height: 100%;
-}
-
-.third-pic {
-    max-width: 60%;
-    height: 100%;
-
-}
-
-.fourth-pic {
-    max-width: 60%;
-    height: 100%;
-}
-
-.fifth-pic {
-    max-width: 20;
-    height: 50%;
-}
-
-.fresh-fruits {
-    width: 100%;
-    height: 100%;
-}
-
-
-.fitness-center {
-    width: 100%;
-    height: 100%;
-}
-
-
 .service {
     text-align: center;
-    font-size: 60px;
+    font-size: 20px;
     background-color: rgb(242, 85, 112);
 }
 
 .text-color {
-    font-size: 100%;
+    font-size: 40%;
 }
 
 
@@ -278,3 +204,33 @@ footer{
     background-color: rgb(242, 85, 112);
     font-size: 50%;
 }
+
+
+.title-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1.5px solid rgb(242, 85, 112);
+    border-start-end-radius: 0.75px;
+}
+
+blockquote {
+    margin: 0px;
+    padding: 16px;
+    margin-top: 16px;
+    border-left: 6px solid rgb(242, 85, 112);
+    font-style: italic;
+    color: #555555;
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .tip-containerTitle {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  
