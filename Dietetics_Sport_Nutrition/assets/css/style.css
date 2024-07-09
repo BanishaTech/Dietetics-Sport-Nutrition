@@ -28,11 +28,6 @@ body {
     margin: 0px;
 }
 
-.container h1 {
-    display: flex;
-    justify-content: center;
-}
-
 .subtitle {
     font-size: 2rem;
     margin: 0;
@@ -75,8 +70,6 @@ body {
 
 }
 
-
-
 .links{
     width: 180px;
     padding-top: 10px;
@@ -106,27 +99,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-/* footer img {
-    width: 50px;
-    margin-right: 20px;
-    border: solid 4px red;
-    background-color: rgb(242, 85, 112);
-} */
-
-.form-icon {
-    display: flex;
-    width: 150px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: auto 10px auto 80px;
-    align-self: center;
 }
 
 .button-icon {
@@ -142,28 +114,6 @@ body {
     width: 100px;
     text-align: center;
     display: none;
-}
-
-#signup:hover {
-    background-color: rgb(242, 85, 112);
-    color: white;
-}
-
-#register:hover {
-    background-color: rgb(242, 85, 112);
-    color: white;
-}
-
-
-.button-icon span {
-    pointer-events: none;
-
-
-}
-
-
-.button-icon:active {
-    background-color: rgb(242, 85, 112);
 }
 
 .icon-search {
