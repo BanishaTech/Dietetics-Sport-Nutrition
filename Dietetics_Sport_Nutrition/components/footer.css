@@ -1,0 +1,41 @@
+footer {
+    padding: 20px;
+    background-color: rgb(242, 85, 112); /* Color de fondo pomelo */
+    color: white; /* Color del texto blanco para mejor contraste */
+    text-align: center; /* Alineación central del contenido */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.icon-img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre los enlaces */
+    transition: color 0.3s ease; /* Transición suave del color */
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #ffd700; /* Color amarillo al pasar el ratón */
+}
+
+.extra-info {
+    margin-top: 20px; /* Espacio superior */
+    font-style: italic; /* Estilo de fuente cursiva */
+}
