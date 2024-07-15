@@ -1,9 +1,66 @@
-.title-bar {
-    font-size: 80px;
-    padding-bottom: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-bar {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .text-color {
+    color: rgb(242, 85, 112);
+  }
+  
+  .main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    background-color: white;
+  }
+  
+  .detail-image {
+    width: 50%;
+    margin-right: 50px;
+    border-radius: 8px;
+  }
+  
+  .description {
+  font-size: 18px;
+  
 }
 
-.titleDescription {
-    font-size: 20px;
+.description h2 {
+  font-size: 24px;
+  color: #333;
 }
+
+.description h3 {
+  font-size: 20px;
+  color:  rgb(242, 85, 112);
+  margin-top: 20px;
+}
+
+.description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.description ul li {
+  margin-bottom: 10px;
+}
+  
+
+  
+
+  

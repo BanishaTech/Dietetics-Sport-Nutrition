@@ -4,28 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dietetics & Sport Nutrition</title>
-    <link rel="stylesheet" href="./assets/css/fontstyles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./personalized_nutrition_styles.css">
     <script src="./js/addHeader.js" defer></script>
     <script src="./js/addButtonNavigation.js" defer></script>
     <script src="./js/addFooter.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <div class="button-navigation"></div>
+    <header>
+      <h1>Dietetics & Sport Nutrition</h1>
+    </header>
+    <nav class="button-navigation">
+      <button>Home</button>
+      <button>About</button>
+      <button>Services</button>
+      <button>Contact</button>
+    </nav>
     <main>
       <div class="title-container">
-        <h4 class="title-bar"><span class="text-color">Personalized Nutrition
-            Plans</span></h4>
+        <h4 class="title-bar"><span class="text-color">Personalized Nutrition Plans</span></h4>
       </div>
-
       <div class="service-detail" id="personalized-nutrition">
-        <p></p>
+        <img src="./assets/img/banner.jpg" alt="Nutrition Plan Image">
+        <p>Our personalized nutrition plans are tailored to meet your specific goals and lifestyle. Whether you are aiming to improve athletic performance, lose weight, or maintain a healthy diet, our expert nutritionists are here to help you every step of the way.</p>
+        <p>With our plans, you'll receive:</p>
+        <ul>
+          <li>Customized meal plans based on your dietary needs</li>
+          <li>Expert advice from certified nutritionists</li>
+          <li>Progress tracking and adjustments</li>
+          <li>Support and motivation to achieve your goals</li>
+        </ul>
+      </div>
+      <div class="benefits">
+        <h2>Benefits of Our Nutrition Plans</h2>
+        <ul>
+          <li>Improved athletic performance</li>
+          <li>Enhanced energy levels</li>
+          <li>Better weight management</li>
+          <li>Overall improved health</li>
+        </ul>
+      </div>
+      <div class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+          <p>"Thanks to the personalized nutrition plan, I've seen a remarkable improvement in my performance and energy levels!"</p>
+          <h3>- John Doe, Athlete</h3>
+        </div>
+        <div class="testimonial">
+          <p>"The expert advice and support have been crucial in helping me achieve my weight loss goals."</p>
+          <h3>- Jane Smith, Client</h3>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
       </div>
     </main>
-
     <footer>
     </footer>
-
     <script src="./js/script.js"></script>
   </body>
 </html>
