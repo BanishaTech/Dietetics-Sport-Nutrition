@@ -40,11 +40,11 @@ header {
 }
 
 .search{
-    width: 50%;
+    width: 40%;
     margin-left: 25px;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(242, 85, 112);
+    border: 1.5px solid rgb(242, 85, 112);
     border-radius: 25px;
     padding: 10px;
     height: 20px;
@@ -63,18 +63,19 @@ header {
     margin-right: 15px;
 }
 
+.buttons {
+    display: none;
+}
+
 .button-icon{
-    transition: background-color 0.3s;
     border-radius: 4px;
     color: black;
     text-decoration: none;
     padding: 10px 20px;
-    display: inline-block;
     border: solid 1.5px rgb(242, 85, 112);
     border-radius: 20px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 20px 0px 20px;
     width: 100px;
     text-align: center;
-    display: none;
 }
 

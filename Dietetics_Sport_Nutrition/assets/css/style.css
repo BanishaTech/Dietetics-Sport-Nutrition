@@ -50,7 +50,6 @@ body {
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-    border-top: 1.5px solid rgb(242, 85, 112);
     border-start-end-radius: 0.75px;
 }
 
@@ -81,13 +80,6 @@ blockquote {
     justify-content: center;
     background-color: #f0f0f0;
 }
-
-/* header {
-    background-color: #e43131;
-    color: white;
-    padding: 20px;
-    text-align: center;
-} */
 
 
 
