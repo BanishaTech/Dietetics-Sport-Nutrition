@@ -1,5 +1,3 @@
-
-
 .photo-content {
   display: flex;
   flex-direction: column; 
@@ -12,8 +10,6 @@
   padding: 60px;
   min-width: 200px;
   max-width: calc(33% - 60px);
-  
-  
 }
 
 .photo-content img {

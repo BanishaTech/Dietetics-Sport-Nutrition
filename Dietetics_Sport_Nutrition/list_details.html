@@ -8,17 +8,20 @@
         <link rel="stylesheet" href="./assets/css/fontstyles.css">
         <script src="./js/addFooter.js" defer></script>
         <script src="./js/addHeader.js" defer></script>
+        <script src="./js/addButtonNavigation.js" defer></script>
+        <script src="./js/postDetailFiller.js" defer></script>
+
     </head>
+    <!--   constructor(title, image, description, content)   ---->
     <body>
         <header></header>
+        <div class="button-navigation"></div>
         <div class="detailContent">
-            <img class="detailPicture" src="{{Image}}" alt>
-            <p class="detailText">{{Description}}</p>
-            <div class="personalDetail">
-                <address class="detailName">Author: Banisha Kumari
-                    Shrestha</address>
-                <time class="detailDate" datetime="2024-07-11">July,11 of
-                    2024</time>
+            <h1 class="title">{{title}}</h1> 
+            <img class="detailPicture" src="{{image}}" alt>
+            <p class="detailText">{{description}}</p>
+            <div>
+            {{content}}
             </div>
         </div>
 
