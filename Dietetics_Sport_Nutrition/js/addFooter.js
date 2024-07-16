@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-fetch("components/footer.html")
+fetch("/Dietetics_Sport_Nutrition/components/footer.html")
   .then(response => response.text())
   .then(stringResponse => {
     const domParser = new DOMParser();
