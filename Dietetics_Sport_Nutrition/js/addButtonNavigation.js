@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-fetch("/Dietetics_Sport_Nutrition/components/button_navigation.html")
+fetch("/components/button_navigation.html")
   .then(response => response.text())
   .then(stringResponse => {
     const domParser = new DOMParser();

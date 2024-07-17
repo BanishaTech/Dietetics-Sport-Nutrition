@@ -3,6 +3,9 @@ footer {
     background-color: rgb(242, 85, 112); /* Color de fondo pomelo */
     color: white; /* Color del texto blanco para mejor contraste */
     text-align: center; /* Alineación central del contenido */
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px);
 }
 
 .footer-content {

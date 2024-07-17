@@ -7,7 +7,7 @@ function fillTemplate(node, data) {
 async function getListItem() {
   try {
    
-    const response = await fetch('list_item.html');
+    const response = await fetch('/components/listItem/list_item.html');
     const text = await response.text();
     console.log(text);
 
