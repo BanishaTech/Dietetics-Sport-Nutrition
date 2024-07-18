@@ -1,12 +1,79 @@
 .container {
-             max-width: 900px;
-             margin: 20px auto;
-             padding: 0 20px;
-             text-align: justify;
- }
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
 
 .quote {
     font-style: italic;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/* Contenedor de la imagen */
+.photo-mask {
+    width: 50%;
+    /* Ancho del contenedor de la máscara */
+    height: auto;
+    /* Altura automática para mantener la relación de aspecto */
+    display: flex;
+    /* Usa Flexbox para centrar contenido */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente si hay espacio adicional */
+    margin: 0 auto;
+    /* Centra el contenedor en el contenedor padre */
+}
+
+/* Imagen dentro del contenedor de la máscara */
+.photo-mask>img {
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 20px;
+}
+
+/* Contenido del bloque */
+.photo-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Contenedor principal de las imágenes */
+.containerImageSection {
+    border: 4px solid red;
+    /* Borde para visualizar el contenedor */
+    display: flex;
+    /* Flexbox para alineación de los elementos hijos */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    justify-content: center;
+    /* Centra los bloques de contenido dentro del contenedor */
+    gap: 20px;
+    /* Espacio entre los bloques de contenido */
+}
+
+.description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.healthCare>a {
+    color: rgb(242, 85, 112);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.healthCare {
+    text-align: center;
+    margin-top: 32px;
 }

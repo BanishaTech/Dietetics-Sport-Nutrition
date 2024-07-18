@@ -4,7 +4,7 @@ fetch("/components/footer.html")
   .then(stringResponse => {
     const domParser = new DOMParser();
     const footerDocument = domParser.parseFromString(stringResponse, 'text/html');
-    console.log("Hola");
+
     footerDocument.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       document.head.appendChild(link.cloneNode(true));
     });
