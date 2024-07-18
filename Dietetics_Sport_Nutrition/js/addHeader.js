@@ -27,9 +27,14 @@ function fillTemplate(node, data) {
 }
 
 // La función que se ejecutará cuando se presione Enter
-function executeSearch() {
+function executeSearch(defaultValue) {
   const input = document.querySelector('.searchlist');
-  if (input.value != null && input.value != undefined) {
+
+  if (defaultValue != null && defaultValue != undefined && defaultValue != "") {
+     input.value = defaultValue;
+  }
+ 
+  if (input.value != null && input.value != undefined && input.value != "") {
     console.log(`Execute search ${input.value}`);
     fetch(`http://localhost:1500/search?question=${input.value}`).then(response => response.json())
       .then(jsonData => {
@@ -50,6 +55,7 @@ function executeSearch() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
   fetch("/components/header.html")
     .then(response => response.text())
     .then(async (stringResponse) => {
@@ -70,9 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       listItem = await getListItem();
-
+      console.log("HOLA 7")
       const input = document.querySelector('.searchlist');
+     
       input.onkeypress = function (event) {
+        console.log("HOLA 8")
         console.log("Executing");
         if (event.key === 'Enter') {
           if (window.location.pathname !== "/searchResults/search_results.html") {
@@ -83,6 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
       };
+
+
+      if (window.location.pathname === "/searchResults/search_results.html") {
+       // Crea un objeto URL usando la URL actual
+        const url = new URL(window.location.href);
+
+        // Obtén el valor del parámetro 'search'
+        const searchValue = url.searchParams.get('search');
+
+        // Muestra el valor en la consola
+        executeSearch(searchValue);
+      }
     })
     .catch(error => {
       console.error(error);
