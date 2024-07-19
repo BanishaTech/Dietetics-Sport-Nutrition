@@ -3,3 +3,9 @@
  * {
   font-family: sans-serif;
  }
+
+h2 {
+    color: rgb(242, 85, 112);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
