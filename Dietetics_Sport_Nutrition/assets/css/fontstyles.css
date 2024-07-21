@@ -1,0 +1,11 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+ * {
+  font-family: sans-serif;
+ }
+
+h2 {
+    color: rgb(242, 85, 112);
+    font-size: 28px;
+    margin-bottom: 10px;
+}

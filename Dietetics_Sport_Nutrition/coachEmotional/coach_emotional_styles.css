@@ -1,0 +1,61 @@
+
+
+.container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: justify;
+             display: flex;
+            flex-direction: column;
+    }
+
+h1 {
+    font-size: 28px;
+    text-align: left;
+    color: rgb(242, 85, 112);
+}
+
+h2 {
+    color: rgb(242, 85, 112);
+    color: black;
+    font-size: 24px;
+}
+
+.quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+
+.emotionalCoach {
+    width: 60%;
+    max-height: 400px;
+    resize: vertical;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.content-image {
+    display: block;
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: rgb(242, 85, 112);
+}

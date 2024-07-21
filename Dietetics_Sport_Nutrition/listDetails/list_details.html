@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./list_details_styles.css">
+        <link rel="stylesheet" href="/assets/css/fontstyles.css">
+        <script src="/js/addFooter.js"></script>
+        <script src="/js/addHeader.js"></script>
+        <script src="/js/addButtonNavigation.js"></script>
+        <script src="/js/postDetailFiller.js"></script>
+    </head>
+    <!--   constructor(title, image, description, content)   ---->
+    <body>
+        <header></header>
+        <div class="button-navigation"></div>
+        <div class="detailContent">
+            <h1 class="title">{{title}}</h1> 
+            <img class="detailPicture" src="{{image}}" alt>
+            <p class="detailText">{{description}}</p>
+            <div>
+            {{content}}
+            </div>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

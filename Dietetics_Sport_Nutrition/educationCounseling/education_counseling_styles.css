@@ -1,0 +1,88 @@
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: left;
+    color: rgb(242, 85, 112);
+}
+
+h2 {
+    color: rgb(242, 85, 112);
+    font-size: 24px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: rgb(242, 85, 112);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.program-details h3 {
+    color: rgb(242, 85, 112);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 42px;
+    margin-top: 42px;
+}
+
+.program-details th, .program-details td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.program-details th {
+    background-color: rgb(242, 85, 112);
+    color: white;
+}
+
+.program-details td {
+    vertical-align: top;
+}
+
+
+.officeImage {
+    align-self: center;
+    object-position: cover;
+    resize: both;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    max-height: 300px;
+}
+
+strong {
+    color: rgb(242, 85, 112);
+}
+
+address {
+  width: fit-content;
+  border: solid 1px  rgb(242, 85, 112);
+  padding: 20px;
+  border-radius: 20px;
+}

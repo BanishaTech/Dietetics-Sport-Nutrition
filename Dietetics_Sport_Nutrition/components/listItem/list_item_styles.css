@@ -1,0 +1,45 @@
+.photo-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  display: flex;
+  justify-content: top;
+  margin: 0;
+  background-color: #f0f0f0; 
+  padding: 60px;
+  min-width: 200px;
+  max-width: calc(33% - 60px);
+ 
+}
+
+.photo-mask {
+   overflow: hidden;
+   width: 100%; /* Mask width */
+   height: 50%; /* Mask height */
+}
+
+.photo-content img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.healthCare {
+  margin-bottom: 20px; 
+  margin-top: 30px;
+}
+
+.healthCare a {
+  text-decoration: none; 
+  color: #e73b75;
+  font-size: 18px;
+}
+
+.description {
+  width: 80%; 
+}
+
+.description p {
+  margin: 0; 
+}
